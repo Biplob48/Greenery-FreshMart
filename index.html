@@ -16,6 +16,12 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
     <!-- DaisyUI Version-4 CDN -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
@@ -71,7 +77,80 @@
   <body>
     <header>
       <!-- Navbar -->
-       
+      <div class="navbar sora-fonts font-normal text-xl">
+        <div class="navbar-start">
+          <div>
+            <a href="">
+              <img
+                src="./c2-assets/logo-header.png"
+                alt="an image with nature leafs"
+                class="w-[140px] h-14"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- navbar menu -->
+        <div class="navbar-center">
+          <!-- div>ul>li*3>a -->
+          <div class="hidden md:flex">
+            <ul class="menu menu-horizontal">
+              <li><a href="">Product</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Menubar buttons -->
+        <div class="navbar-end">
+          <div class="md:space-x-3 md:flex">
+            <button class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
+              </svg>
+            </button>
+
+            <button class="btn btn-ghost btn-circle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="md:space-x-2 md:flex">
+            <button class="btn btn-outline btn-accent text-[#111111] w-28 h-11">
+              Login
+            </button>
+
+            <button class="btn btn-success text-[#FFFFFF] w-32 h-11">
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main></main>
