@@ -75,36 +75,68 @@
   </head>
 
   <body>
-    <header>
-      <!-- Navbar -->
+    <header class="container mx-auto">
+      <!-- Navbar section-->
       <div class="navbar sora-fonts font-normal text-xl">
         <div class="navbar-start">
-          <div>
-            <a href="">
-              <img
-                src="./c2-assets/logo-header.png"
-                alt="an image with nature leafs"
-                class="w-[140px] h-14"
-              />
-            </a>
-          </div>
+          <a href="">
+            <img
+              src="./c2-assets/logo-header.png"
+              alt="an image with nature leafs"
+              class="w-[140px] h-14 mt-6"
+            />
+          </a>
         </div>
 
-        <!-- navbar menu -->
-        <div class="navbar-center">
-          <!-- div>ul>li*3>a -->
-          <div class="hidden md:flex">
-            <ul class="menu menu-horizontal">
+        <!-- menubar for small devices -->
+        <div class="navbar-end md:hidden">
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-outline btn-success rounded-xl"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="-1"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-xl z-1 -translate-x-9 mt-1 w-36 p-2 shadow-md shadow-yellow-600 bg-green-100"
+            >
               <li><a href="">Product</a></li>
               <li><a href="">Services</a></li>
               <li><a href="">Contact us</a></li>
+              <li><a href="">Login</a></li>
+              <li><a href="">Register</a></li>
             </ul>
           </div>
         </div>
 
-        <!-- Menubar buttons -->
-        <div class="navbar-end">
-          <div class="md:space-x-3 md:flex">
+        <!-- navbar menu -->
+        <div class="navbar-center hidden md:flex mt-7">
+          <!-- div>ul>li*3>a -->
+          <ul class="menu menu-horizontal">
+            <li class="hover:bg-orange-200 rounded-lg"><a href="">Product</a></li>
+            <li class="hover:bg-orange-200 rounded-lg"><a href="">Services</a></li>
+            <li class="hover:bg-orange-200 rounded-lg"><a href="">Contact us</a></li>
+          </ul>
+        </div>
+
+        <!-- menu buttons -->
+        <div class="navbar-end hidden md:flex">
+          <div class="md:space-x-3 md:flex mt-7">
             <button class="btn btn-ghost btn-circle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +172,7 @@
             </button>
           </div>
 
-          <div class="md:space-x-2 md:flex">
+          <div class="md:space-x-2 md:flex mt-6">
             <button class="btn btn-outline btn-accent text-[#111111] w-28 h-11">
               Login
             </button>
