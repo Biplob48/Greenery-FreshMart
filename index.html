@@ -76,18 +76,18 @@
               <img
                 src="./c2-assets/logo-header.png"
                 alt="an image with nature leafs"
-                class="w-[140px]  h-14 mt-6 hidden md:inline"
+                class="w-[140px] h-14 mt-6 hidden md:inline"
               />
             </a>
           </div>
 
           <!-- menubar for small devices -->
           <div class="navbar-end md:hidden">
-            <div class="dropdown ">
+            <div class="dropdown">
               <div
                 tabindex="0"
                 role="button"
-                class="btn btn-outline btn-success rounded-xl mt-4 mr-2"
+                class="btn btn-outline btn-success rounded-xl mt-4 mr-1"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -184,11 +184,14 @@
             </div>
           </div>
         </div>
-        
+
         <!-- marquee -->
-         <div class="mt-4 text-base md:text-lg font-medium text-red-800">
-          <marquee behavior="scroll" direction="left" scrollamount="8">“Naturally Fresh, Specially Discounted, and Highly Rated by Customers for Freshness, Flavor, and Fast Delivery.”</marquee>
-         </div>
+        <div class="mt-4 text-base md:text-lg font-medium text-red-800">
+          <marquee behavior="scroll" direction="left" scrollamount="8">
+            “Naturally Fresh, Specially Discounted, and Highly Rated by
+            Customers Who Trust Our Quality and Care.”
+          </marquee>
+        </div>
         <!-- banner section -->
         <div>
           <div class="text-center mt-12 md:mt-[85px]">
@@ -220,7 +223,71 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <!-- services section -->
+      <div class="container mx-auto sora-fonts">
+        <h1 class="text-4xl mb-12 font-semibold text-[#179800]">Services</h1>
+
+        <!-- All cards -->
+        <div class="flex gap-x-6">
+          
+          <!-- Card-01 -->
+          <div class="card bg-[#EFEBE3] mw-[424px] mh-[380px] mb-32">
+            <figure class="pt-12 pb-5">
+              <img
+                src="./c2-assets/service.png"
+                alt="numeric symbol"
+                class="w-[100px] h-[100px] rounded-3xl bg-white"
+              />
+            </figure>
+            <div class="card-body text-center items-center">
+              <h2 class="card-title text-2xl font-semibold pb-2">
+                24/7 Services
+              </h2>
+              <p class="text-xl font-light">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, quaerat! Atque maiores architecto voluptatibus omnis?
+              </p>
+            </div>
+          </div>
+          <!-- card-02 -->
+          <div class="card bg-[#EFEBE3] mw-[424px] mh-[380px] mb-32">
+            <figure class="pt-12 pb-5">
+              <img
+                src="./c2-assets/delivery.png"
+                alt="numeric symbol"
+                class="w-[100px] h-[100px] rounded-3xl bg-white"
+              />
+            </figure>
+            <div class="card-body text-center items-center">
+              <h2 class="card-title text-2xl font-semibold pb-2">
+                Fast delivery
+              </h2>
+              <p class="text-xl font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolor eveniet incidunt, accusamus recusandae perspiciatis!
+              </p>
+            </div>
+          </div>
+          <!-- card-03 -->
+          <div class="card bg-[#EFEBE3] mw-[424px] mh-[380px] mb-32">
+            <figure class="pt-12 pb-5">
+              <img
+                src="./c2-assets/healthy.png"
+                alt="numeric symbol"
+                class="w-[100px] h-[100px] rounded-3xl bg-white"
+              />
+            </figure>
+            <div class="card-body text-center items-center">
+              <h2 class="card-title text-2xl font-semibold pb-2">
+                Healthy Products
+              </h2>
+              <p class="text-xl font-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi eum expedita, cupiditate reiciendis accusantium ratione?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer></footer>
   </body>
